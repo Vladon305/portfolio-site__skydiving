@@ -1,0 +1,140 @@
+.header {
+  padding: 23px 0px 12px 28px;
+  z-index: 3;
+  // .header__content
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    a {
+      color: inherit;
+    }
+  }
+
+  // .header__logo
+
+  &__logo {
+    display: flex;
+    align-items: center;
+  }
+
+  &__logo-top {
+    font-weight: 900;
+    font-size: 14px;
+    color: #ffffff;
+  }
+
+  &__logo-bottom {
+    font-weight: 400;
+    font-size: 10px;
+    color: #ffffff;
+  }
+}
+
+.menu {
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 15px;
+  a {
+    margin: 0px 13px;
+    &:first-child {
+      margin-left: 0px;
+    }
+    &:last-child {
+      margin-right: 0px;
+    }
+  }
+}
+.connection {
+  display: flex;
+  // .connection__address
+
+  &__address {
+    font-size: 15px;
+    line-height: 18px;
+    display: flex;
+    align-items: center;
+  }
+
+  // .connection__address-city
+
+  &__address-city {
+    font-weight: 700;
+  }
+
+  // .connection__address-street
+
+  &__address-street {
+    font-weight: 400;
+  }
+  &__number {
+    display: flex;
+    align-items: center;
+  }
+  &__tel__ligo {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.number {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  display: flex;
+}
+.tel__ligo {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+}
+._icon-logo::before {
+  color: #ffb400;
+  font-size: 52px;
+  margin: 0px 8px 0px 0px;
+}
+._icon-place::before {
+  color: #ffb400;
+  font-size: 18px;
+  margin: 0px 8px 0px 0px;
+}
+._icon-phone::before {
+  color: #ffb400;
+  font-size: 18px;
+  margin: 0px 8px 0px 0px;
+}
+.worktime {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 16px;
+  color: #b8b7b8;
+}
+.header__freecall {
+  color: initial;
+  padding: 10px 20px;
+  &-btn {
+    color: #000;
+    text-align: center;
+  }
+}
+
+.conteiner {
+  position: relative;
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 0px 20px;
+  @media (max-width: $md1) {
+    max-width: 970px;
+  }
+  @media (max-width: $md2) {
+    max-width: 750px;
+  }
+  @media (max-width: $md3) {
+    max-width: none;
+    padding: 0 10px;
+  }
+  @media (max-width: 1400px) {
+    overflow: hidden;
+  }
+}

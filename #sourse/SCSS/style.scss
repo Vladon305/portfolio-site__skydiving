@@ -1,0 +1,99 @@
+@import "nullstyle.scss";
+@import url("https://fonts.googleapis.com/css?family=Montserrat:regular,700,900&display=swap&subset=cyrillic-ext");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:regular&display=swap&subset=cyrillic-ext");
+
+@font-face {
+  font-family: "Proxima Nova Bold";
+  src: url("../../fonts/font/ProximaNova-Bold.eot");
+  src: local("Proxima Nova Bold"), local("../../fonts/font/ProximaNova-Bold"),
+    url("../../fonts/font/ProximaNova-Bold.eot?#iefix") format("embedded-opentype"),
+    url("../../fonts/font/ProximaNova-Bold.woff2") format("woff2"),
+    url("../../fonts/font/ProximaNova-Bold.woff") format("woff"),
+    url("../../fonts/font/ProximaNova-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Proxima Nova Regular Italic";
+  src: url("../../fonts/font/ProximaNova-RegularIt.eot");
+  src: local("Proxima Nova Regular Italic"), local("../../fonts/font/ProximaNova-RegularIt"),
+    url("../../fonts/font/ProximaNova-RegularIt.eot?#iefix") format("embedded-opentype"),
+    url("../../fonts/font/ProximaNova-RegularIt.woff2") format("woff2"),
+    url("../../fonts/font/ProximaNova-RegularIt.woff") format("woff"),
+    url("../../fonts/font/ProximaNova-RegularIt.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Proxima Nova Regular";
+  src: url("../../fonts/font/ProximaNova-Regular.eot");
+  src: local("Proxima Nova Regular"), local("../../fonts/font/ProximaNova-Regular"),
+    url("../../fonts/font/ProximaNova-Regular.eot?#iefix") format("embedded-opentype"),
+    url("../../fonts/font/ProximaNova-Regular.woff2") format("woff2"),
+    url("../../fonts/font/ProximaNova-Regular.woff") format("woff"),
+    url("../../fonts/font/ProximaNova-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+//Шрифт по умолчанию
+$fontFamily: "Montserrat";
+
+//icons
+@import "icons.scss";
+
+//Переменные
+$minWidth: 320px;
+$maxWidth: 1920px;
+$maxWidthContainer: 1170px;
+$md1: $maxWidthContainer;
+$md2: 991.98px;
+$md3: 767.98px;
+$md4: 479.98px;
+
+//Общие параметры
+body {
+  font-family: $fontFamily;
+  color: #fff;
+  font-size: 14px;
+}
+
+.page {
+  flex: 1 1 auto;
+}
+
+//Оболочка
+.wrapper {
+  width: 100%;
+  min-height: 100%;
+  overflow: hidden;
+}
+//Основная сетка
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+  @media (max-width: $md1) {
+    max-width: 970px;
+  }
+  @media (max-width: $md2) {
+    max-width: 750px;
+  }
+  @media (max-width: $md3) {
+    max-width: none;
+    padding: 0 10px;
+  }
+}
+
+//forms
+@import "forms.scss";
+
+//ui
+@import "ui.scss";
+
+//header
+@import "header.scss";
+
+//home
+@import "home.scss";

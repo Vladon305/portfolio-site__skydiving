@@ -1,0 +1,441 @@
+.skydiving {
+  // .skydiving__content
+
+  &__content {
+    margin: 80px 0px 0px 0px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  // .skydiving__title
+
+  &__title {
+    max-width: 650px;
+    font-weight: 900;
+    font-size: 72px;
+    line-height: 78px;
+    margin: 0px 0px 44px 0px;
+  }
+
+  // .skydiving__hight
+
+  &__hight {
+    align-self: flex-start;
+    margin: 0px 0px 52px 0px;
+    font-weight: 900;
+    font-size: 36px;
+    background-color: #ffb400;
+  }
+
+  // .skydiving__info
+
+  &__info {
+    max-width: 600px;
+    margin: 0px 0px 52px 0px;
+    font-family: "Proxima Nova";
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 25px;
+    background: url("../../img/icon1.png") left center no-repeat;
+    padding: 0px 0px 0px 40px;
+    span {
+      font-weight: 700;
+      color: #ffb400;
+    }
+  }
+
+  // .skydiving__btn
+
+  &__btn {
+    display: flex;
+  }
+
+  // .skydiving__btn-certificate
+
+  &__btn-certificate {
+    padding: 18px 65px;
+  }
+
+  .icon-btn-video {
+    width: 81px;
+    img {
+      display: block;
+      width: 100%;
+    }
+  }
+  .see__video {
+    display: flex;
+  }
+
+  // .skydiving__btn-video
+
+  &__btn-video {
+    padding: 11px 0px 0px 0px;
+    p {
+      color: #000;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 12px;
+      &:last-child {
+        color: #ffb400;
+      }
+    }
+  }
+}
+.skydiving {
+  // .skydiving__skydiver
+
+  &__skydiver {
+    width: 662px;
+    height: 466px;
+    position: absolute;
+    top: 40px;
+    right: -155px;
+    z-index: 3;
+    img {
+      display: block;
+      width: 100%;
+    }
+    @media (max-width: 1620px) {
+      display: none;
+    }
+  }
+
+  // .skydiving__airplane
+
+  &__airplane {
+    width: 485px;
+    height: 215px;
+    position: absolute;
+    top: -90px;
+    left: 620px;
+    z-index: 3;
+    img {
+      display: block;
+      width: 100%;
+    }
+    @media (max-width: 1400px) {
+      top: 67px;
+      left: 630px;
+    }
+    @media (max-width: $maxWidthContainer) {
+      display: none;
+    }
+  }
+
+  // .skydiving__jumper
+
+  &__jumper {
+    width: 284px;
+    height: 320px;
+    position: absolute;
+    top: -166px;
+    left: -481px;
+    z-index: 3;
+    img {
+      display: block;
+      width: 100%;
+    }
+    @media (max-width: 1860px) {
+      display: none;
+    }
+  }
+}
+
+.aboutus {
+  color: #000;
+  padding: 100px 0px 0px 0px;
+  z-index: 2;
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  // .aboutus__title
+
+  &__title {
+    display: flex;
+    line-height: 78px;
+    margin: 0px 0px 48px 0px;
+    span {
+      margin: 0px 20px 0px 0px;
+    }
+  }
+
+  .aboutus__plus {
+    display: flex;
+    position: relative;
+    align-self: stretch;
+  }
+  .aboutus__images {
+    flex: 1 1 auto;
+    position: relative;
+
+    .video-block {
+      position: absolute;
+      top: 0px;
+      left: -4%;
+      z-index: 3;
+    }
+    .video-block-2 {
+      position: absolute;
+      bottom: 53px;
+      left: 50%;
+    }
+    .billet-name {
+      padding: 8px 28px;
+      background-color: #fff;
+      position: absolute;
+      bottom: 30px;
+      left: 23%;
+      box-shadow: 0px 4px 70px rgba(0, 0, 0, 0.5);
+      border-radius: 5px;
+      z-index: 3;
+      // .billet-name__title
+
+      &__title {
+        font-weight: 900;
+        font-size: 11px;
+        line-height: 13px;
+        text-align: center;
+      }
+
+      // .billet-name__text
+
+      &__text {
+        font-family: "Proxima Nova";
+        font-style: italic;
+        font-weight: 400;
+        font-size: 8px;
+        line-height: 10px;
+      }
+    }
+
+    .aboutus__image {
+      position: absolute;
+      top: -200px;
+      left: 55x;
+      z-index: 1;
+      img {
+        display: block;
+        width: 100%;
+      }
+      @media (max-width: $md2) {
+        display: none;
+      }
+    }
+  }
+  // .aboutus__text
+
+  &__text {
+    max-width: 570px;
+    font-family: "Proxima Nova";
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: left;
+    margin: 0px 0px 50px 0px;
+    li {
+      background: url("../../img/icon1.png") left center no-repeat;
+      padding: 0px 0px 0px 40px;
+      margin: 0px 0px 40px 0px;
+      &:last-child {
+        margin: 0px 0px 0px 0px;
+      }
+    }
+  }
+
+  // .aboutus__colomn
+
+  &__colomn {
+  }
+}
+.aboutus {
+  // .aboutus__airplane
+
+  &__airplane {
+    width: 420px;
+    height: 285px;
+    position: absolute;
+    top: -190px;
+    right: -405px;
+    z-index: 3;
+    img {
+      display: block;
+      width: 100%;
+    }
+    @media (max-width: 1750px) {
+      display: none;
+    }
+  }
+
+  // .aboutus__skydivers
+
+  &__skydivers {
+    width: 450px;
+    height: 328px;
+    position: absolute;
+    bottom: -80px;
+    left: -420px;
+    z-index: 3;
+    img {
+      display: block;
+      width: 100%;
+    }
+    @media (max-width: 1750px) {
+      display: none;
+    }
+  }
+}
+
+.colomn {
+  display: flex;
+  justify-content: space-between;
+  align-self: stretch;
+  background-color: #fff;
+  z-index: 2;
+
+  // .colomn__info
+
+  &__info {
+    display: flex;
+  }
+
+  // .colomn__ligo-1
+
+  &__ligo {
+    font-weight: 900;
+    font-size: 110px;
+    line-height: 134px;
+    margin: 0px 16px 0px 0px;
+
+    background: linear-gradient(180deg, #ffe096 0%, #ffb400 100%), #000000;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+  }
+
+  // .colomn__text
+
+  &__text {
+    max-width: 221px;
+    align-self: center;
+    font-family: "Proxima Nova";
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    span {
+      color: #ffb400;
+      font-weight: 700;
+    }
+  }
+}
+
+.fon1 {
+  width: 100%;
+  height: 897px;
+  background: url("../../img/fonstola 1.jpg") 0 0 / cover no-repeat scroll;
+}
+.fon2 {
+  width: 100%;
+  height: 100%;
+  background: //url("../../img/fon2.png") 0 900px / cover no-repeat scroll;
+    url("../../img/fon3.png") 0 0 / cover no-repeat scroll;
+}
+
+.question {
+  margin: 100px 0px 0px 0px;
+  // .question__airplane
+
+  &__airplane {
+    width: 900px;
+    height: 310px;
+    position: absolute;
+    top: 215px;
+    left: -225px;
+    z-index: 3;
+    img {
+      display: block;
+      width: 100%;
+    }
+    @media (max-width: 1620px) {
+      display: none;
+    }
+  }
+
+  // .question__questions
+
+  &__questions {
+    width: 1474.53px;
+    height: 806.71px;
+    position: absolute;
+    top: 140px;
+    left: -7px;
+    z-index: 3;
+    img {
+      display: block;
+      width: 100%;
+    }
+    @media (max-width: 1620px) {
+      display: none;
+    }
+  }
+
+  // .question__colomns
+
+  &__colomns {
+    display: flex;
+    flex-direction: column;
+    max-width: 570px;
+    margin: 0px 0px 0px auto;
+  }
+
+  // .question__colomn
+
+  &__colomn {
+    align-items: center;
+    justify-content: stretch;
+    box-shadow: 0px 11px 77px rgba(0, 0, 0, 0.05);
+    border-radius: 5px;
+  }
+
+  &__content {
+  }
+}
+
+.colomn {
+  // .colomn__text
+
+  &__text {
+    color: #000;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+  }
+
+  // .colomn__icon
+
+  &__icon {
+    margin: 0px 28px;
+    img {
+      display: block;
+      width: 100%;
+    }
+  }
+}
+.number__logo {
+  font-weight: 900;
+  font-size: 64px;
+  line-height: 78px;
+  margin: 28px;
+}
+.text-colomn {
+  color: #000;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 18px;
+  max-width: auto;
+  flex: 1 1 310px;
+}
