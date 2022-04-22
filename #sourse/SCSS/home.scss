@@ -30,6 +30,7 @@
   // .skydiving__info
 
   &__info {
+    color: #000;
     max-width: 600px;
     margin: 0px 0px 52px 0px;
     font-family: "Proxima Nova";
@@ -181,7 +182,7 @@
     .video-block-2 {
       position: absolute;
       bottom: 53px;
-      left: 50%;
+      left: 60%;
     }
     .billet-name {
       padding: 8px 28px;
@@ -215,7 +216,7 @@
     .aboutus__image {
       position: absolute;
       top: -200px;
-      left: 55x;
+      left: 55px;
       z-index: 1;
       img {
         display: block;
@@ -244,11 +245,6 @@
         margin: 0px 0px 0px 0px;
       }
     }
-  }
-
-  // .aboutus__colomn
-
-  &__colomn {
   }
 }
 .aboutus {
@@ -314,7 +310,6 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-    text-fill-color: transparent;
   }
 
   // .colomn__text
@@ -336,7 +331,7 @@
 .fon1 {
   width: 100%;
   height: 897px;
-  background: url("../../fonstola1.jpg") 0 0 / cover no-repeat scroll;
+  background: url("../../img/fonstola1.jpg") 0 0 / cover no-repeat scroll;
 }
 .fon2 {
   width: 100%;
@@ -345,23 +340,266 @@
     url("../../img/fon3.png") 0 0 / cover no-repeat scroll;
 }
 
+.program {
+  padding: 100px 0px 0px 0px;
+
+  &__content {
+    position: relative;
+  }
+  // .program__title
+
+  &__title {
+    text-align: center;
+  }
+
+  .conteiner {
+    min-height: 1050px;
+    position: relative;
+
+    @media (max-width: 1400px) {
+      max-width: none;
+      padding: 0 10px;
+    }
+
+    @media (max-width: $md1) {
+      max-width: none;
+      padding: 0 10px;
+    }
+    @media (max-width: $md2) {
+      max-width: none;
+      padding: 0 10px;
+    }
+    @media (max-width: $md3) {
+      max-width: none;
+      padding: 0 10px;
+    }
+
+    .skydivers {
+      position: absolute;
+      top: 175px;
+      left: 120px;
+      z-index: 1;
+      img {
+        display: block;
+        width: 100%;
+      }
+    }
+    .advantage-inner {
+      position: relative;
+      top: -20px;
+      left: 10px;
+      .adventage-1 {
+        position: relative;
+        width: 126px;
+        height: 150px;
+        top: 100px;
+        left: 500px;
+        z-index: 1;
+        img {
+          display: block;
+          width: 100%;
+        }
+        @media (max-width: $md2) {
+          display: none;
+        }
+        .arrow {
+          width: 180px;
+          height: 180px;
+          position: absolute;
+          top: 55px;
+          left: 145px;
+          z-index: 1;
+          img {
+            display: block;
+            width: 100%;
+          }
+        }
+      }
+      .adventage-2 {
+        width: 126px;
+        height: 150px;
+        position: absolute;
+        top: 85px;
+        left: 810px;
+        z-index: 1;
+        img {
+          display: block;
+          width: 100%;
+        }
+        @media (max-width: $md2) {
+          display: none;
+        }
+        .arrow {
+          width: 180px;
+          height: 180px;
+          position: absolute;
+          top: 170px;
+          left: 65px;
+          z-index: 1;
+          img {
+            display: block;
+            width: 100%;
+          }
+        }
+      }
+      .adventage-3 {
+        width: 126px;
+        height: 150px;
+        top: 315px;
+        left: 875px;
+        z-index: 1;
+        img {
+          display: block;
+          width: 100%;
+        }
+        @media (max-width: $md2) {
+          display: none;
+        }
+        .arrow {
+          width: 180px;
+          height: 180px;
+          position: absolute;
+          top: 110px;
+          left: -200px;
+          z-index: 1;
+          img {
+            display: block;
+            width: 100%;
+          }
+        }
+      }
+      .adventage-4 {
+        width: 126px;
+        height: 150px;
+        top: 310px;
+        right: -510px;
+        z-index: 1;
+        img {
+          display: block;
+          width: 100%;
+        }
+        @media (max-width: $md2) {
+          display: none;
+        }
+        .arrow {
+          width: 180px;
+          height: 180px;
+          position: absolute;
+          top: -55px;
+          left: -245px;
+          z-index: 1;
+          img {
+            display: block;
+            width: 100%;
+          }
+        }
+      }
+      .adventage-5 {
+        width: 126px;
+        height: 150px;
+        position: absolute;
+        top: -30px;
+        right: -130px;
+        z-index: 1;
+        img {
+          display: block;
+          width: 100%;
+        }
+        @media (max-width: $md2) {
+          display: none;
+        }
+        .arrow {
+          width: 180px;
+          height: 180px;
+          position: absolute;
+          top: 170px;
+          left: 65px;
+          z-index: 1;
+          img {
+            display: block;
+            width: 100%;
+          }
+        }
+      }
+      .adv {
+        position: relative;
+      }
+      .advantage {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        z-index: 1;
+        img {
+          display: block;
+          width: 100%;
+        }
+        @media (max-width: $md2) {
+          display: none;
+        }
+      }
+    }
+    .program__btn {
+      position: absolute;
+      top: 415px;
+      left: 440px;
+      text-align: center;
+      max-width: 240px;
+      padding: 20px;
+      margin: 20px auto;
+      z-index: 4;
+      a {
+        color: #000;
+      }
+    }
+
+    .airball {
+      width: 480px;
+      height: 374px;
+      position: absolute;
+      top: 30px;
+      left: -205px;
+      img {
+        display: block;
+        width: 100%;
+      }
+      @media (max-width: 1750px) {
+        display: none;
+      }
+    }
+    .airball2 {
+      width: 580px;
+      height: 456px;
+      position: absolute;
+      bottom: 75px;
+      right: -460px;
+      img {
+        display: block;
+        width: 100%;
+      }
+      @media (max-width: 1750px) {
+        display: none;
+      }
+    }
+  }
+}
+
 .question {
-  margin: 100px 0px 0px 0px;
+  padding: 100px 0px 0px 0px;
+
+  .conteiner {
+    overflow: visible;
+  }
   // .question__airplane
 
   &__airplane {
     width: 900px;
     height: 310px;
     position: absolute;
-    top: 215px;
-    left: -225px;
-    z-index: 3;
+    top: 345px;
+    left: -255px;
     img {
       display: block;
       width: 100%;
-    }
-    @media (max-width: 1620px) {
-      display: none;
     }
   }
 
@@ -373,13 +611,10 @@
     position: absolute;
     top: 140px;
     left: -7px;
-    z-index: 3;
+    z-index: 1;
     img {
       display: block;
       width: 100%;
-    }
-    @media (max-width: 1620px) {
-      display: none;
     }
   }
 
@@ -389,7 +624,7 @@
     display: flex;
     flex-direction: column;
     max-width: 570px;
-    margin: 0px 0px 0px auto;
+    margin: 130px 0px 0px auto;
   }
 
   // .question__colomn
@@ -399,9 +634,6 @@
     justify-content: stretch;
     box-shadow: 0px 11px 77px rgba(0, 0, 0, 0.05);
     border-radius: 5px;
-  }
-
-  &__content {
   }
 }
 
@@ -438,4 +670,193 @@
   line-height: 18px;
   max-width: auto;
   flex: 1 1 310px;
+}
+.popup {
+  padding: 100px 0px 0px 0px;
+
+  .conteiner {
+    overflow: visible;
+  }
+  .airplain-3 {
+    width: 505px;
+    height: 146px;
+    position: absolute;
+    top: 110px;
+    left: -225px;
+    img {
+      display: block;
+      width: 100%;
+    }
+    @media (max-width: 1750px) {
+    }
+  }
+  .hand-img {
+    width: 1306px;
+    height: 871px;
+    position: absolute;
+    top: 110px;
+    left: 180px;
+    img {
+      display: block;
+      width: 100%;
+    }
+    @media (max-width: 1750px) {
+    }
+  }
+  .popup__content {
+    padding: 0px 0px 100px 0px;
+    overflow: visible;
+  }
+  &__body {
+    margin: 110px 0px 0px 0px;
+    padding: 10px;
+    width: 460px;
+    height: 605px;
+    background-color: #fff;
+    box-shadow: 0px 11px 77px rgba(0, 0, 0, 0.05);
+  }
+  .popup__title {
+    text-align: center;
+  }
+
+  .form {
+    color: #b8b7b8;
+    max-width: 460px;
+
+    // .form__item
+
+    &__item {
+      margin: 0px 0px 20px 0px;
+    }
+
+    // .form__lable
+
+    &__lable {
+      font-family: "Open Sans";
+      font-weight: 400;
+      font-size: 11px;
+      line-height: 25px;
+      margin: 0px 0px 10px 0px;
+    }
+
+    // .form__input
+
+    &__input {
+      height: 76px;
+      padding: 0px 20px;
+      background: #e6e6e6;
+      border: 3px solid #f3f3f3;
+      border-radius: 5px;
+      width: 100%;
+      font-family: "Open Sans";
+      font-weight: 400;
+      font-size: 17px;
+      line-height: 25px;
+    }
+    &__input-name {
+      &::placeholder {
+        color: #fff;
+        padding-left: 2rem;
+      }
+      background: url("../../img/boss.png") 5px no-repeat, #e6e6e6;
+    }
+    &__input-tel {
+      &::placeholder {
+        padding-left: 2rem;
+        color: #fff;
+      }
+      background: url("../../img/russia.png") 5px no-repeat, #e6e6e6;
+    }
+  }
+  .main-popup {
+    width: 440px;
+    height: 590px;
+    background-color: #fff;
+    border: 1px solid rgba(255, 180, 0, 0.4);
+    box-sizing: border-box;
+    box-shadow: 0px 11px 77px rgba(0, 0, 0, 0.05);
+    border-radius: 5px;
+    padding: 46px;
+
+    // .main-popup__title
+
+    &__title {
+      text-align: center;
+      font-size: 25px;
+      line-height: 30px;
+    }
+
+    // .main-popup__text
+
+    &__text {
+      max-width: 260px;
+      text-align: center;
+      color: #000;
+      font-family: "Open Sans";
+      font-weight: 400;
+      font-size: 15px;
+      margin: 0px auto 14px auto;
+    }
+  }
+  .form__btn {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 60px;
+    font-weight: 700;
+    font-size: 14px;
+    text-transform: uppercase;
+    margin: 0px 0px 40px 0px;
+
+    cursor: pointer;
+  }
+  .checkbox {
+    width: 100%;
+    min-width: 28%;
+    font-family: "Open Sans";
+    font-weight: 400;
+    font-size: 11px;
+
+    // .checkbox__input
+
+    &__input {
+      display: none;
+      &:checked + .checkbox__lable::after {
+        transform: scale(1);
+      }
+    }
+
+    // .checkbox__lable
+
+    &__lable {
+      display: inline-flex;
+      align-items: center;
+      position: relative;
+      cursor: pointer;
+      &::before {
+        content: "";
+        align-self: flex-start;
+        flex: 0 0 24px;
+        height: 24px;
+        background: url("../../img/Vector.svg") 7px 8px no-repeat, #ffb400;
+        border-radius: 3px;
+        margin-right: 10px;
+      }
+      &::after {
+        transition: transform 0.5s ease 0s;
+        content: "";
+        width: 16px;
+        height: 16px;
+        position: absolute;
+        top: 4px;
+        left: 4px;
+        transform: scale(0);
+      }
+      a {
+        color: inherit;
+        text-decoration: underline;
+      }
+    }
+  }
 }
