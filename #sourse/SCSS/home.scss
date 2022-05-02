@@ -743,7 +743,7 @@
 
     &__input {
       height: 76px;
-      padding: 0px 20px;
+      padding: 0px 20px 0px 50px;
       background: #e6e6e6;
       border: 3px solid #f3f3f3;
       border-radius: 5px;
@@ -808,8 +808,14 @@
     font-size: 14px;
     text-transform: uppercase;
     margin: 0px 0px 40px 0px;
-
     cursor: pointer;
+    &::hover {
+      background-color: #cc9820;
+      background: linear-gradient(180deg, #ffda83 0%, #cc9820 100%);
+      box-shadow: inset 0px -6px 10px rgba(255, 247, 233, 0.3), inset 0px 6px 10px rgba(255, 247, 233, 0.3);
+      border-radius: 7px;
+      transform: translateY(2px);
+    }
   }
   .checkbox {
     width: 100%;
@@ -823,7 +829,7 @@
     &__input {
       display: none;
       &:checked + .checkbox__lable::after {
-        transform: scale(1);
+        transform: scale(0);
       }
     }
 
@@ -839,7 +845,7 @@
         align-self: flex-start;
         flex: 0 0 24px;
         height: 24px;
-        background: url("../../img/Vector.svg") 7px 8px no-repeat, #ffb400;
+        background: #ffb400;
         border-radius: 3px;
         margin-right: 10px;
       }
@@ -849,9 +855,10 @@
         width: 16px;
         height: 16px;
         position: absolute;
-        top: 4px;
-        left: 4px;
-        transform: scale(0);
+        top: 0px;
+        left: 0px;
+        background: url("../../img/Vector.svg") 7px 8px no-repeat;
+        transform: scale(1);
       }
       a {
         color: inherit;

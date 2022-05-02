@@ -1091,7 +1091,7 @@ body {
 }
 .popup .form__input {
   height: 76px;
-  padding: 0px 20px;
+  padding: 0px 20px 0px 50px;
   background: #e6e6e6;
   border: 3px solid #f3f3f3;
   border-radius: 5px;
@@ -1191,6 +1191,16 @@ body {
   margin: 0px 0px 40px 0px;
   cursor: pointer;
 }
+.popup .form__btn::hover {
+  background-color: #cc9820;
+  background: -webkit-gradient(linear, left top, left bottom, from(#ffda83), to(#cc9820));
+  background: linear-gradient(180deg, #ffda83 0%, #cc9820 100%);
+  -webkit-box-shadow: inset 0px -6px 10px rgba(255, 247, 233, 0.3), inset 0px 6px 10px rgba(255, 247, 233, 0.3);
+          box-shadow: inset 0px -6px 10px rgba(255, 247, 233, 0.3), inset 0px 6px 10px rgba(255, 247, 233, 0.3);
+  border-radius: 7px;
+  -webkit-transform: translateY(2px);
+          transform: translateY(2px);
+}
 .popup .checkbox {
   width: 100%;
   min-width: 28%;
@@ -1202,8 +1212,8 @@ body {
   display: none;
 }
 .popup .checkbox__input:checked + .checkbox__lable::after {
-  -webkit-transform: scale(1);
-          transform: scale(1);
+  -webkit-transform: scale(0);
+          transform: scale(0);
 }
 .popup .checkbox__lable {
   display: -webkit-inline-box;
@@ -1223,7 +1233,7 @@ body {
       -ms-flex: 0 0 24px;
           flex: 0 0 24px;
   height: 24px;
-  background: url("../../img/Vector.svg") 7px 8px no-repeat, #ffb400;
+  background: #ffb400;
   border-radius: 3px;
   margin-right: 10px;
 }
@@ -1236,10 +1246,11 @@ body {
   width: 16px;
   height: 16px;
   position: absolute;
-  top: 4px;
-  left: 4px;
-  -webkit-transform: scale(0);
-          transform: scale(0);
+  top: 0px;
+  left: 0px;
+  background: url("../../img/Vector.svg") 7px 8px no-repeat;
+  -webkit-transform: scale(1);
+          transform: scale(1);
 }
 .popup .checkbox__lable a {
   color: inherit;
