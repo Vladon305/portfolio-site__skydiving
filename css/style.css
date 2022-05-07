@@ -434,6 +434,18 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+@media (max-width: 767.98px) {
+  .skydiving__btn {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 .skydiving__btn-certificate {
   padding: 18px 65px;
@@ -1289,7 +1301,7 @@ body {
 @media (max-width: 767.98px) {
   .popup .main-popup {
     width: 340px;
-    height: 490px;
+    height: auto;
   }
 }
 .popup .main-popup__title {
