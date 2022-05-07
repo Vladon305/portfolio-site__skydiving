@@ -1,0 +1,201 @@
+.popup {
+  padding: 100px 0px 0px 0px;
+
+  .conteiner {
+    overflow: visible;
+  }
+  .airplain-3 {
+    width: 505px;
+    height: 146px;
+    position: absolute;
+    top: 110px;
+    left: -225px;
+    img {
+      display: block;
+      width: 100%;
+    }
+    @media (max-width: $md2) {
+      display: none;
+    }
+  }
+  .hand-img {
+    width: 1306px;
+    height: 871px;
+    position: absolute;
+    top: 110px;
+    left: 180px;
+    img {
+      display: block;
+      width: 100%;
+    }
+    @media (max-width: $md2) {
+      display: none;
+    }
+  }
+  &__content {
+    padding: 0px 0px 100px 0px;
+    overflow: visible;
+  }
+  &__body {
+    margin: 110px 0px 0px 0px;
+    padding: 10px;
+    width: 460px;
+    height: 605px;
+    background-color: #fff;
+    box-shadow: 0px 11px 77px rgba(0, 0, 0, 0.05);
+    @media (max-width: $md2) {
+      margin: 110px auto 0px auto;
+    }
+  }
+  .popup__title {
+    text-align: center;
+  }
+
+  .form {
+    color: #b8b7b8;
+    max-width: 460px;
+
+    // .form__item
+
+    &__item {
+      margin: 0px 0px 20px 0px;
+    }
+
+    // .form__lable
+
+    &__lable {
+      font-family: "Open Sans";
+      font-weight: 400;
+      font-size: 11px;
+      line-height: 25px;
+      margin: 0px 0px 10px 0px;
+    }
+
+    // .form__input
+
+    &__input {
+      height: 76px;
+      padding: 0px 20px 0px 50px;
+      background: #e6e6e6;
+      border: 3px solid #f3f3f3;
+      border-radius: 5px;
+      width: 100%;
+      font-family: "Open Sans";
+      font-weight: 400;
+      font-size: 17px;
+      line-height: 25px;
+    }
+    &__input-name {
+      &::placeholder {
+        color: #fff;
+        padding-left: 2rem;
+      }
+      background: url("../../img/boss.png") 5px no-repeat, #e6e6e6;
+    }
+    &__input-tel {
+      &::placeholder {
+        padding-left: 2rem;
+        color: #fff;
+      }
+      background: url("../../img/russia.png") 5px no-repeat, #e6e6e6;
+    }
+  }
+  .main-popup {
+    width: 440px;
+    height: 590px;
+    background-color: #fff;
+    border: 1px solid rgba(255, 180, 0, 0.4);
+    box-sizing: border-box;
+    box-shadow: 0px 11px 77px rgba(0, 0, 0, 0.05);
+    border-radius: 5px;
+    padding: 46px;
+
+    // .main-popup__title
+
+    &__title {
+      text-align: center;
+      font-size: 25px;
+      line-height: 30px;
+    }
+
+    // .main-popup__text
+
+    &__text {
+      max-width: 260px;
+      text-align: center;
+      color: #000;
+      font-family: "Open Sans";
+      font-weight: 400;
+      font-size: 15px;
+      margin: 0px auto 14px auto;
+    }
+  }
+  .form__btn {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 60px;
+    font-weight: 700;
+    font-size: 14px;
+    text-transform: uppercase;
+    margin: 0px 0px 40px 0px;
+    cursor: pointer;
+    &::hover {
+      background-color: #cc9820;
+      background: linear-gradient(180deg, #ffda83 0%, #cc9820 100%);
+      box-shadow: inset 0px -6px 10px rgba(255, 247, 233, 0.3), inset 0px 6px 10px rgba(255, 247, 233, 0.3);
+      border-radius: 7px;
+      transform: translateY(2px);
+    }
+  }
+  .checkbox {
+    width: 100%;
+    min-width: 28%;
+    font-family: "Open Sans";
+    font-weight: 400;
+    font-size: 11px;
+
+    // .checkbox__input
+
+    &__input {
+      display: none;
+      &:checked + .checkbox__lable::after {
+        transform: scale(0);
+      }
+    }
+
+    // .checkbox__lable
+
+    &__lable {
+      display: inline-flex;
+      align-items: center;
+      position: relative;
+      cursor: pointer;
+      &::before {
+        content: "";
+        align-self: flex-start;
+        flex: 0 0 24px;
+        height: 24px;
+        background: #ffb400;
+        border-radius: 3px;
+        margin-right: 10px;
+      }
+      &::after {
+        transition: transform 0.5s ease 0s;
+        content: "";
+        width: 16px;
+        height: 16px;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        background: url("../../img/Vector.svg") 7px 8px no-repeat;
+        transform: scale(1);
+      }
+      a {
+        color: inherit;
+        text-decoration: underline;
+      }
+    }
+  }
+}

@@ -10,6 +10,9 @@
     a {
       color: inherit;
     }
+    @media (max-width: $md1) {
+      flex-wrap: wrap;
+    }
   }
 
   // .header__logo
@@ -136,5 +139,10 @@
   }
   @media (max-width: 1400px) {
     overflow: hidden;
+  }
+}
+.wrap {
+  @media (max-width: $md1) {
+    margin: 15px 0px;
   }
 }

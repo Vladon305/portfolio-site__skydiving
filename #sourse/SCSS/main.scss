@@ -1,0 +1,146 @@
+.skydiving {
+  // .skydiving__content
+
+  &__content {
+    margin: 80px 0px 0px 0px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  // .skydiving__title
+
+  &__title {
+    max-width: 650px;
+    font-weight: 900;
+    font-size: 72px;
+    line-height: 78px;
+    margin: 0px 0px 44px 0px;
+    @media (max-width: $md3) {
+      font-size: 50px;
+    }
+  }
+
+  // .skydiving__hight
+
+  &__hight {
+    align-self: flex-start;
+    margin: 0px 0px 52px 0px;
+    font-weight: 900;
+    font-size: 36px;
+    background-color: #ffb400;
+  }
+
+  // .skydiving__info
+
+  &__info {
+    color: #000;
+    max-width: 600px;
+    margin: 0px 0px 52px 0px;
+    font-family: "Proxima Nova";
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 25px;
+    background: url("../../img/icon1.png") left center no-repeat;
+    padding: 0px 0px 0px 40px;
+    span {
+      font-weight: 700;
+      color: #ffb400;
+    }
+  }
+
+  // .skydiving__btn
+
+  &__btn {
+    display: flex;
+  }
+
+  // .skydiving__btn-certificate
+
+  &__btn-certificate {
+    padding: 18px 65px;
+  }
+
+  .icon-btn-video {
+    width: 81px;
+    img {
+      display: block;
+      width: 100%;
+    }
+  }
+  .see__video {
+    display: flex;
+  }
+
+  // .skydiving__btn-video
+
+  &__btn-video {
+    padding: 11px 0px 0px 0px;
+    p {
+      color: #000;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 12px;
+      &:last-child {
+        color: #ffb400;
+      }
+    }
+  }
+
+  // .skydiving__skydiver
+
+  &__skydiver {
+    width: 662px;
+    height: 466px;
+    position: absolute;
+    top: 40px;
+    right: -155px;
+    z-index: 3;
+    img {
+      display: block;
+      width: 100%;
+    }
+    @media (max-width: 1620px) {
+      display: none;
+    }
+  }
+
+  // .skydiving__airplane
+
+  &__airplane {
+    width: 485px;
+    height: 215px;
+    position: absolute;
+    top: -90px;
+    left: 620px;
+    z-index: 3;
+    img {
+      display: block;
+      width: 100%;
+    }
+    @media (max-width: 1400px) {
+      top: 67px;
+      left: 630px;
+    }
+    @media (max-width: $maxWidthContainer) {
+      display: none;
+    }
+  }
+
+  // .skydiving__jumper
+
+  &__jumper {
+    width: 284px;
+    height: 320px;
+    position: absolute;
+    top: -166px;
+    left: -481px;
+    z-index: 3;
+    img {
+      display: block;
+      width: 100%;
+    }
+    @media (max-width: 1860px) {
+      display: none;
+    }
+  }
+}
