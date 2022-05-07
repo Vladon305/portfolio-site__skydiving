@@ -23,6 +23,9 @@
   span {
     color: #ffb400;
   }
+  @media (max-width: $md3) {
+    font-size: 40px;
+  }
 }
 .fon1 {
   width: 100%;
