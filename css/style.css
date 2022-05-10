@@ -1401,7 +1401,7 @@ body._lock {
   line-height: 25px;
 }
 .popup .form__input-name {
-  background: url("../../img/boss.png") 5px no-repeat, #e6e6e6;
+  background: url("../img/boss.png") 5px no-repeat, #e6e6e6;
 }
 .popup .form__input-name::-webkit-input-placeholder {
   color: #fff;
@@ -1424,7 +1424,7 @@ body._lock {
   padding-left: 2rem;
 }
 .popup .form__input-tel {
-  background: url("../../img/russia.png") 5px no-repeat, #e6e6e6;
+  background: url("../img/russia.png") 5px no-repeat, #e6e6e6;
 }
 .popup .form__input-tel::-webkit-input-placeholder {
   padding-left: 2rem;
