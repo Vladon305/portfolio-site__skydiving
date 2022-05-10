@@ -17,6 +17,7 @@ if (window.innerWidth <= 767) {
   headerContent.append(headerNav);
   headerNav.innerHTML = inner;
 }
+
 menuBurger.addEventListener('click', function () {
   const headerLogo = document.querySelector('.header__logo');
   const innerHeaderNav = document.querySelectorAll('.wrap');
@@ -33,3 +34,4 @@ menuBurger.addEventListener('click', function () {
 
   document.body.classList.toggle("_lock");
 });
+

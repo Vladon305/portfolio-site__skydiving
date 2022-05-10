@@ -89,6 +89,11 @@
   }
 }
 .number__logo {
+  background: linear-gradient(180deg, #ffe096 0%, #ffb400 100%), #000000;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+
   font-weight: 900;
   font-size: 64px;
   line-height: 78px;

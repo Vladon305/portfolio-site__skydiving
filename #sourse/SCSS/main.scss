@@ -16,7 +16,7 @@
     line-height: 78px;
     margin: 0px 0px 44px 0px;
     @media (max-width: $md3) {
-      font-size: 50px;
+      font-size: 45px;
     }
   }
 
@@ -74,6 +74,10 @@
   }
   .see__video {
     display: flex;
+    @media (max-width: $md3) {
+      margin: 40px 0px 0px 0px;
+      padding: 0px 25px 0px 0px;
+    }
   }
 
   // .skydiving__btn-video

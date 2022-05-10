@@ -553,7 +553,7 @@ body._lock {
 }
 @media (max-width: 767.98px) {
   .skydiving__title {
-    font-size: 50px;
+    font-size: 45px;
   }
 }
 .skydiving__hight {
@@ -610,6 +610,12 @@ body._lock {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+@media (max-width: 767.98px) {
+  .skydiving .see__video {
+    margin: 40px 0px 0px 0px;
+    padding: 0px 25px 0px 0px;
+  }
 }
 .skydiving__btn-video {
   padding: 11px 0px 0px 0px;
@@ -1281,6 +1287,11 @@ body._lock {
 }
 
 .number__logo {
+  background: -webkit-gradient(linear, left top, left bottom, from(#ffe096), to(#ffb400)), #000000;
+  background: linear-gradient(180deg, #ffe096 0%, #ffb400 100%), #000000;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
   font-weight: 900;
   font-size: 64px;
   line-height: 78px;
@@ -1542,7 +1553,7 @@ body._lock {
   position: absolute;
   top: 0px;
   left: 0px;
-  background: url("../../img/Vector.svg") 7px 8px no-repeat;
+  background: url("../img/Vector.svg") 7px 8px no-repeat;
   -webkit-transform: scale(1);
           transform: scale(1);
 }
