@@ -58,6 +58,9 @@ body {
   font-family: $fontFamily;
   color: #fff;
   font-size: 14px;
+  &._lock {
+    overflow: hidden;
+  }
 }
 
 .page {
